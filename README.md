@@ -2,22 +2,22 @@
 2019 Fall : Introduction of Machine Learning Project</br>
 The goal of this project is to classify and generate digit wav data.</br>
 
-Dataset
+1.Dataset
 ==============
 Free Spoken Digit Dataset(FSDD)</br>
-https://github.com/Jakobovski/free-spoken-digit-dataset</br>
+https://github.com/Jakobovski/free-spoken-digit-dataset
 
-Preprocessing
+1.1.Preprocessing
 ---------------
 I used Fourier Transform to transform the data into two 2D arrays : Amplitude, Phase.</br>
 Each array has time on the x-axis.</br>
 
-1.Digit Recognition
+2.Digit Recognition
 ==================
 I implemented CNN(Convolutional Neural Network) to classify which digit is.</br>
 Only amplitude is used for input. And the Accuracy is about 94%.</br>
 
-2.Digit Generation
+3.Digit Generation
 =====================
 DCGAN(Deep Convolution Generative Adversarial Nets) is implemented to generate digit sound.</br>
 The model generates amplitude and phase in a 2D array. Then, inverse of Fourier transform is applied to them, making new sound.</br>
